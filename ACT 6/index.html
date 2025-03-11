@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" name="fname" size= "100%"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" name="lname" size= "100%"></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" name="password" size= "70%"></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password:</label></td>
+                    <td><input type="password" name="confirm_password" size= "70%"></td>
+                </tr>
+                <tr>
+                    <td><label>Address:</label></td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label>Country:</label></td>
+                    <td><input type="text" name="country"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <select name="gender">
+                            <option value="">------</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Birthdate:</label></td>
+                    <td class="inline-group">
+                        <select>
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+
+                        <select>
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+
+                        <select>
+                            <option>Year</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Status:</label></td>
+                    <td class="inline-group">
+                        <input type="radio" name="status"> <span class="red-text">Single</span>
+                        <input type="radio" name="status"> <span class="red-text">Married</span>
+                        <input type="radio" name="status"> <span class="red-text">Widow</span>
+                        <input type="radio" name="status"> <span class="red-text">Separated</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Course Interested:</label></td>
+                    <td>
+                        <input type="checkbox"> <span class="red-text">Engineering Courses (Electrical and Civil) </span> <br>
+						<input type="checkbox"> <span class="red-text">Bachelor of Science in Information Technology</span>
+					</td>
+				</tr>
+                <tr>
+                    <td><label>COMMENTS / SUGGESTIONS:</label></td>
+                    <td><textarea rows="9" cols="50">type here...</textarea></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

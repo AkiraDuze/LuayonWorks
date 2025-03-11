@@ -1,0 +1,51 @@
+body {
+    background-color: #000080; /* Dark blue background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid white;
+}
+
+tr {
+	padding: 10px;
+}
+
+td:nth-child(2) {
+    white-space: nowrap;
+}
+
+input, select, textarea {
+    width: auto;
+    padding: 5px;
+    border: 1px solid white;
+    background: lightblue;
+    color: darkblue;
+}
+
+.red-text {
+    color: red;
+    font-weight: bold;
+}
+
+.inline-group {
+    display: flex;
+    gap: 10px; /* Ensures spacing between elements */
+    flex-wrap: nowrap; /* Prevents items from wrapping */
+    align-items: center;
+}
+

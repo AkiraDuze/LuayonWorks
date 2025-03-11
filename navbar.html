@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Navigation</h2>
+        <ul>
+            <li>
+                <a href="#" onclick="toggleDropdown('homework')">HTML</a>
+                <ul id="homework" class="dropdown">
+                    <li><a href="ACT 1/index.html" target="content">Activity 1</a></li>
+                    <li><a href="ACT 2/Gallery Index.html" target="content">Activity 2</a></li>
+                    <li><a href="ACT 3/Bell-Borne Geochelone.html" target="content">Activity 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="toggleDropdown('seatwork')">CSS</a>
+                <ul id="seatwork" class="dropdown">
+                    <li><a href="ACT 4/Gallery.html" target="content">Activity 4</a></li>
+                    <li><a href="ACT 5/index.html" target="content">Activity 5</a></li>
+                    <li><a href="ACT 6/index.html" target="content">Activity 6</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

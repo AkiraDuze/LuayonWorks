@@ -1,0 +1,138 @@
+body {
+    background-image: url('img/role-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+img.one{
+	position: absolute;
+	top: 50px; 
+	left: 390px;
+	height: 100; 
+	width: 100;
+}
+	
+img.two{ 
+	position: absolute;
+	top: 50px;
+	left: 590px;
+	height: 100; 
+	width: 100; 
+}
+
+img.three{
+	position: absolute;
+	top: 50px;
+	left: 790px;
+	height: 100; 
+	width: 100;
+}
+
+img.four{
+	position: absolute;
+	top: 50px; 
+	left: 990px;
+	height: 100; 
+	width: 100;
+}
+	
+img.five{ 
+	position: absolute;
+	top: 250px;
+	left: 390px;
+	height: 100; 
+	width: 100;
+}
+
+img.six{
+	position: absolute;
+	top: 250px;
+	left: 590px;
+	height: 100; 
+	width: 100;
+}
+
+img.seven{
+	position: absolute;
+	top: 250px; 
+	left: 790px;
+	height: 100; 
+	width: 100;
+}
+	
+img.eight{ 
+	position: absolute;
+	top: 250px;
+	left: 990px;
+	height: 100; 
+	width: 100;
+
+}
+
+img.nine{
+	position: absolute;
+	top: 450px;
+	left: 390px;
+	height: 100; 
+	width: 100;
+}
+
+img.ten{
+	position: absolute;
+	top: 450px; 
+	left: 590px;
+	height: 100; 
+	width: 100;
+}
+	
+img.eleven{ 
+	position: absolute;
+	top: 450px;
+	left: 790px;
+	height: 100; 
+	width: 100;
+	border: thick; 
+}
+
+img.twelve{
+	position: absolute;
+	top: 450px;
+	left: 990px;
+	height: 100; 
+	width: 100;
+}
+
+img.thirteen{
+	position: absolute;
+	top: 650px; 
+	left: 390px;
+	height: 100; 
+	width: 100;
+}
+	
+img.fourteen{ 
+	position: absolute;
+	top: 650px;
+	left: 590px;
+	height: 100; 
+	width: 100;
+}
+
+img.fifteen{
+	position: absolute;
+	top: 650px;
+	left: 790px;
+	height: 100; 
+	width: 100;
+}
+
+img.sixteen{
+	position: absolute;
+	top: 650px; 
+	left: 990px;
+	height: 100; 
+	width: 100;
+}

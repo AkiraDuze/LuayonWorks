@@ -1,0 +1,109 @@
+/* Background settings */
+body {
+    background-image: url('img/role-bg.jpg'); /* Change to your actual image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative; /* Ensure the overlay is positioned relative to the body */
+}
+
+/* Overlay background */
+.overlay-background {
+    position: absolute; /* Position it absolutely within the body */
+    top: 50%; /* Move the top edge to the center */
+    left: 50%; /* Move the left edge to the center */
+    transform: translate(-50%, -50%); /* Center the element */
+    width: 85%; /* Increase the width */
+    height: 100%; /* Increase the height */
+    background-image: url('img/kitchen.png'); /* Your second background image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place it behind other content */
+    filter: blur(5px); /* Blur the edges */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.8) 10%,
+        rgba(0, 0, 0, 0.8) 90%,
+        transparent 100%
+    ); /* Create a gradient mask to blur edges */
+}
+
+/* Grid container for the 4x4 layout */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 850px; /* Adjust based on spacing */
+    margin: 0 auto; /* Center the grid horizontally */
+    padding: 20px;
+    position: relative; /* Ensure the grid is above the overlay */
+    z-index: 1; /* Place it above the overlay */
+}
+
+/* General gallery item styling */
+.gallery-item {
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on the whole div */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rarity Indicator */
+.gallery-item hr {
+    border: none;
+    height: 5px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Example rarity colors */
+.common hr { background-color: #8FD09C; box-shadow: 0 0 10px #8FD09C; }
+.rare hr { background-color: #88BCCB; box-shadow: 0 0 10px #88BCCB; }
+.epic hr { background-color: #DC7EDC; box-shadow: 0 0 10px #DC7EDC; }
+.legendary hr { background-color: #E8DC6B; box-shadow: 0 0 10px #E8DC6B; }
+
+/* Moving text effect - Hidden by default */
+.food-name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    padding: 5px 0;
+}
+
+/* When hovering over the div, trigger the text scroll */
+.gallery-item:hover .food-name {
+    animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
